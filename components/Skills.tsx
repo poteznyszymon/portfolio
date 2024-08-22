@@ -35,6 +35,11 @@ export const Skills = () => {
         direction="left"
         speed="fast"
       />
+      <InfiniteMovingCards
+        items={thirdRowSkills}
+        direction="right"
+        speed="fast"
+      />
     </div>
   );
 };
