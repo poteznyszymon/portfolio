@@ -61,7 +61,7 @@ const Hero = () => {
         >
           <motion.img
             className="h-64 w-64 lg:h-80 lg:w-80 translate-x-3 rotate-[-10deg] transition-all duration-500"
-            src="/memoji.png"
+            src="./memoji.png"
             height={500}
             width={500}
             alt="avatar"

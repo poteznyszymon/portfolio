@@ -1,4 +1,3 @@
-import placeholder from "@/public/placeholder.png";
 import chatGPTClone from "@/public/chatgpt-clone.png";
 import twitterClone from "@/public/twitter-clone.png";
 
