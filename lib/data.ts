@@ -52,19 +52,17 @@ export const firstRowSkills = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Tanstack query",
+  "Tailwindcss",
 ];
 
 export const secondRowSkills = [
   "Next.js",
-  "Tailwindcss",
   "MongoDB",
   "Express.js",
   "Node.js",
+  "PostgressSQL",
+  "Vscode",
 ];
 
-export const thirdRowSkills = [
-  "tanstack query",
-  "Git",
-  "Vscode",
-  "PostgressSQL",
-];
+export const thirdRowSkills = [];

@@ -28,16 +28,11 @@ export const Skills = () => {
       <InfiniteMovingCards
         items={firstRowSkills}
         direction="right"
-        speed="normal"
+        speed="fast"
       />
       <InfiniteMovingCards
         items={secondRowSkills}
         direction="left"
-        speed="normal"
-      />
-      <InfiniteMovingCards
-        items={thirdRowSkills}
-        direction="right"
         speed="fast"
       />
     </div>
