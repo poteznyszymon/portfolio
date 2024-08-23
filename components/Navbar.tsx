@@ -61,14 +61,14 @@ const Navbar = () => {
           draverOpen ? "left-0" : "left-[-100%]"
         }`}
       >
-        <ul className="p-4 flex flex-col gap-3">
+        <ul className="pt-8 pl-5 flex flex-col gap-3  ">
           {links.map((item) => (
             <Link
               href={item.hash}
               key={item.name}
               onClick={() => setDraverOpen(false)}
             >
-              <li className="text-slate-50 text-4xl font-semibold tracking-tighter">
+              <li className="text-slate-50 text-4xl font-semibold tracking-tighter hover:scale-110 duration-300 transition-all">
                 {item.name}
               </li>
             </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
       <div
         onClick={() => setDraverOpen(false)}
         className={`z-20 sm:hidden fixed top-0 left-0 w-screen h-screen bg-black ${
-          draverOpen ? "bg-opacity-50 cursor-pointer" : "bg-opacity-0 hidden"
+          draverOpen ? "bg-opacity-50 cursor-pointer " : "bg-opacity-0 hidden"
         }`}
       ></div>
     </>

@@ -65,6 +65,7 @@ const Hero = () => {
             height={500}
             width={500}
             alt="avatar"
+            whileHover={{ scale: 1 }}
             initial={{ scale: 1, rotate: 0 }}
             animate={{ scale: 1.2, rotate: -10 }}
           />
