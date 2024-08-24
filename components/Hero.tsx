@@ -18,7 +18,7 @@ const Hero = () => {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 100 }}
         >
-          <p className="text-4xl md:text-5xl md:h-14 lg:text-6xl h-11 lg:h-[4.1rem] font-bold tracking-tighter bg-gradient-to-r from-main-purple to-main-orange  text-transparent bg-clip-text">
+          <p className="text-4xl md:text-5xl md:h-14 lg:text-6xl h-11 lg:h-[4.3rem] font-bold tracking-tighter bg-gradient-to-r from-main-purple to-main-orange  text-transparent bg-clip-text">
             Szymon Fularczyk
           </p>
           <p className="text-2xl lg:text-4xl font-semibold">

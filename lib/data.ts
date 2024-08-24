@@ -45,25 +45,20 @@ export const projectsData = [
   },
 ];
 
-export const firstRowSkills = [
+export const skills = [
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
   "React",
-];
-
-export const secondRowSkills = [
+  "tanstack query",
   "Next.js",
   "Tailwindcss",
   "MongoDB",
-  "Express.js",
-  "Node.js",
-];
-
-export const thirdRowSkills = [
-  "tanstack query",
-  "Git",
-  "Vscode",
   "PostgressSQL",
+  "Prisma",
+  "Node.js",
+  "Express.js",
+  "Postman",
+  "Vscode",
 ];
