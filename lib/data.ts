@@ -1,5 +1,6 @@
 import chatGPTClone from "@/public/chatgpt-clone.png";
 import twitterClone from "@/public/twitter-clone.png";
+import placeholder from "@/public/placeholder.png";
 
 export const links = [
   {
@@ -42,6 +43,13 @@ export const projectsData = [
       "tanstack Query",
     ],
     imageUrl: twitterClone,
+  },
+  {
+    title: "In progress...",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare leo in odio ultricies pulvinar. Maecenas magna ante, bibendum sed pellentesque",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
+    imageUrl: placeholder,
   },
 ];
 

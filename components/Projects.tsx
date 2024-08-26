@@ -9,7 +9,7 @@ import React from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects");
+  const { ref } = useSectionInView("Projects", 0.5);
 
   return (
     <div
