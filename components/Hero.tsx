@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row  mt-5 xl:gap-3 lg:gap-2 md:gap-1 gap-3">
             <a
               href="mailto:szymonfularczyk@o2.pl"
-              className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-white text-sm px-4 py-2 rounded-full justify-between md:justify-between flex items-center gap-2"
+              className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-white text-sm px-4 py-3 sm:py-2 rounded-full justify-between md:justify-between flex items-center gap-2"
             >
               <p>Contact me here</p>
               <FaArrowRightLong />
@@ -38,7 +38,7 @@ const Hero = () => {
             <a
               href=""
               download
-              className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-2 rounded-full justify-between md:justify-between flex items-center gap-1"
+              className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-3 sm:py-2  rounded-full justify-between md:justify-between flex items-center gap-1"
             >
               <p>Download CV</p>
               <LiaDownloadSolid size={18} />
@@ -46,7 +46,7 @@ const Hero = () => {
             <a
               href="https://github.com/poteznyszymon"
               target="_blank"
-              className="px-4 py-2 bg-white border border-gray-200 shadow-md text-sm hover:scale-105 transition-all duration-500 rounded-full flex items-center gap-1 font-semibold justify-between md:justify-between"
+              className="px-4 py-3 sm:py-2  bg-white border border-gray-200 shadow-md text-sm hover:scale-105 transition-all duration-500 rounded-full flex items-center gap-1 font-semibold justify-between md:justify-between"
             >
               <p>Github</p>
               <MdKeyboardArrowRight />
