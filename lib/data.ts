@@ -22,9 +22,9 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "ChatGPT Clone",
+    title: "Chat AI",
     description:
-      "Fullstack chatgpt clone that allows users to store multiple chats that are stored in mongo database.",
+      "Fullstack ai-chat app that allows users to store multiple chats that are stored in mongo database.",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
     imageUrl: chatGPTClone,
   },
