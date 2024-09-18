@@ -1,5 +1,5 @@
 import chatGPTClone from "@/public/chatgpt-clone.png";
-import twitterClone from "@/public/twitter-clone.png";
+import pingpost from "@/public/pingpost.png";
 import placeholder from "@/public/placeholder.png";
 
 export const links = [
@@ -25,14 +25,14 @@ export const projectsData = [
   {
     title: "Chat AI",
     description:
-      "Fullstack ai-chat app that allows users to store multiple chats that are stored in mongo database.",
+      "Fullstack ai-chat app that allows users to ask questions with ai bot and store multiple chats.",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
     imageUrl: chatGPTClone,
   },
   {
-    title: "Twitter Clone",
+    title: "Pingpost",
     description:
-      "Fullstack twitter clone made with jwt auth and mern tech stack. Tanstack query allows infinity posts loading while scrolling.",
+      "Fullstack social media app made with mern tech stack that allows users to create posts, like and comment and much more.",
     tags: [
       "React",
       "Node.js",
@@ -40,9 +40,9 @@ export const projectsData = [
       "JWT",
       "MongoDB",
       "Tailwind",
-      "tanstack Query",
+      "Tanstack Query",
     ],
-    imageUrl: twitterClone,
+    imageUrl: pingpost,
   },
   {
     title: "In progress...",
@@ -59,7 +59,7 @@ export const skills = [
   "JavaScript",
   "TypeScript",
   "React",
-  "tanstack query",
+  "Tanstack query",
   "Next.js",
   "Tailwindcss",
   "MongoDB",

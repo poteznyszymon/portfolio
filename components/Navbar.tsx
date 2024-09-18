@@ -46,8 +46,6 @@ const Navbar = () => {
                       className="absolute left-0 bottom-0 h-[2px] w-full bg-main-purple"
                       initial={{ width: 0 }}
                       animate={{ width: "100%" }}
-                      exit={{ width: 0 }}
-                      transition={{ duration: 0.3 }}
                     ></motion.div>
                   )}
                 </Link>
@@ -57,7 +55,7 @@ const Navbar = () => {
         </nav>
       </motion.div>
       <div
-        className={`fixed sm:hidden top-0 w-[60%] z-30 h-full bg-gradient-to-br from-main-orange  to-main-purple ease-in-out duration-500 ${
+        className={`fixed sm:hidden top-0 w-[60%] z-30 h-full bg-gradient-to-tr from-main-orange to-main-purple ease-in-out duration-500 ${
           draverOpen ? "left-0" : "left-[-100%]"
         }`}
       >

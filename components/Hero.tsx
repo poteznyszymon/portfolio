@@ -46,7 +46,7 @@ const Hero = () => {
             <a
               href="https://github.com/poteznyszymon"
               target="_blank"
-              className="px-4 py-3 sm:py-2  bg-white border border-gray-200 shadow-md text-sm hover:scale-105 transition-all duration-500 rounded-full flex items-center gap-1 font-semibold justify-between md:justify-between"
+              className="px-4 py-3 sm:py-2  bg-white border border-gray-200 shadow-md text-sm md:hover:scale-105 hover:scale-[102%] transition-all duration-500 rounded-full flex items-center gap-1 font-semibold justify-between md:justify-between"
             >
               <p>Github</p>
               <MdKeyboardArrowRight />
@@ -65,7 +65,6 @@ const Hero = () => {
             height={500}
             width={500}
             alt="avatar"
-            whileHover={{ scale: 1 }}
             initial={{ scale: 1, rotate: 0 }}
             animate={{ scale: 1.2, rotate: -10 }}
           />
