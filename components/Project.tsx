@@ -47,7 +47,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
             </ul>
           </div>
           <Image
-            className="absolute object-fill hidden sm:block h-full w-full top-8 -right-[23rem] rounded-t-lg shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-[-3deg]"
+            className="absolute object-contain hidden sm:block h-full w-full top-8 -right-[23rem] rounded-t-lg shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:translate-x-3 group-hover:translate-y-3 group-hover:rotate-[-3deg]"
             src={imageUrl}
             alt="project image"
             quality={100}
