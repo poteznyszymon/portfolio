@@ -15,7 +15,7 @@ const Projects = () => {
     <div
       ref={ref}
       id="projects"
-      className="w-full m-auto max-w-5xl mb-32  bg-transparent scroll-m-32 space-y-5"
+      className="w-full m-auto max-w-5xl mb-32 bg-transparent scroll-m-32 space-y-5"
     >
       <motion.h1
         variants={fadeInAnimationsVariants}
@@ -31,7 +31,7 @@ const Projects = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="bg-gray-100 mx-auto max-w-2xl w-full p-5 rounded-lg border-black/5 border"
+        className="bg-gray-100 mx-10 md:mx-auto max-w-2xl  p-5 rounded-lg border-black/5 border"
       >
         <p className="text-center text-lg">test account for projects</p>
         <div>
