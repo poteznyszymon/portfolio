@@ -7,7 +7,13 @@ import { useRef } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  tags,
+  imageUrl,
+  link,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,10 +32,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
       }}
       className="mb-5 sm:mb-8 last:mb-0 "
     >
-      <a
-        href="https://github.com/poteznyszymon?tab=repositories"
-        target="_blank"
-      >
+      <a href={link} target="_blank">
         <section className="group max-w-2xl relative rounded-lg sm:h-[20rem] border-black/5 border bg-gray-100 mx-10 md:mx-auto overflow-hidden">
           <div className="flex flex-col sm:max-w-[50%] h-full pt-8 sm:pt-4 px-5 pb-8 sm:pb-7">
             <h2 className="text-2xl font-semibold">{title}</h2>

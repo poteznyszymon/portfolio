@@ -23,6 +23,7 @@ export const links = [
 
 export const projectsData = [
   {
+    link: "https://github.com/poteznyszymon/fullstack-chatgpt-clone",
     title: "Chat AI",
     description:
       "Fullstack ai-chat app that allows users to ask questions with ai bot and store multiple chats.",
@@ -30,6 +31,7 @@ export const projectsData = [
     imageUrl: chatGPTClone,
   },
   {
+    link: "https://pingpost-fullstack.onrender.com/",
     title: "Pingpost",
     description:
       "Fullstack social media app made with mern tech stack that allows users to create posts, like and comment and much more.",
@@ -45,6 +47,7 @@ export const projectsData = [
     imageUrl: pingpost,
   },
   {
+    link: "",
     title: "In progress...",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare leo in odio ultricies pulvinar. Maecenas magna ante, bibendum sed pellentesque",
