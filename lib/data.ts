@@ -48,10 +48,18 @@ export const projectsData = [
   },
   {
     link: "",
-    title: "In progress...",
+    title: "Chatty",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare leo in odio ultricies pulvinar. Maecenas magna ante, bibendum sed pellentesque",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
+      "Fullstack app for chatting with realtime features and optimistic updates.",
+    tags: [
+      "React",
+      "Bun",
+      "Hono.js",
+      "PostgressSQL",
+      "Drizzle",
+      "Socket.io",
+      "Tanstack Query",
+    ],
     imageUrl: placeholder,
   },
 ];
