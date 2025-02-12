@@ -23,7 +23,7 @@ export const links = [
 
 export const projectsData = [
   {
-    link: "https://fullstack-chatgpt-clone.onrender.com/",
+    link: "https://fullstack-chatgpt-clone.onrender.com",
     title: "Chat AI",
     description:
       "Fullstack ai-chat app that allows users to ask questions with ai bot and store multiple chats.",

@@ -5,6 +5,7 @@ import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import Project from "./Project";
 import React from "react";
+import { CircleAlert } from "lucide-react";
 
 import { useSectionInView } from "@/lib/hooks";
 
@@ -26,6 +27,19 @@ const Projects = () => {
       >
         My Projects
       </motion.h1>
+      <motion.div
+        variants={fadeInAnimationsVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="flex items-center gap-2 justify-center"
+      >
+        <CircleAlert className="size-5 text-red-500" />
+        <p className="text-muted-foreground">
+          Projects are hosted on free-tier services. They may take a moment to
+          wake up, but they're worth the wait!
+        </p>
+      </motion.div>
       {projectsData.map((project, index) => (
         <React.Fragment key={index}>
           <Project {...project} />
