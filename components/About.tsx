@@ -32,13 +32,10 @@ const About = () => {
         I am computer science student at UMK in Toruń, Poland, in the meantime
         I&apos;m self-taught{" "}
         <span className="font-semibold">fullstack web developer</span>. My main
-        tech stack is{" "}
-        <span className="font-semibold">
-          React, Node.js, Express.js, Mongodb
-        </span>
-        . I am also familiar with <span className="font-semibold">Next.js</span>{" "}
-        and <span className="font-semibold">Typescript</span>, I am always open
-        to learn new technologies. Apart from coding, I enjoy lifting at gym and
+        tech stack is <span className="font-semibold">React, Node.js</span>. I
+        am also familiar <span className="font-semibold">postgress</span> and{" "}
+        <span className="font-semibold">mongodb</span>, I am always open to
+        learn new technologies. Apart from coding, I enjoy lifting at gym and
         swimming.
       </motion.p>
     </div>

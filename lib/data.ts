@@ -1,6 +1,7 @@
 import chatGPTClone from "@/public/chatgpt-clone.png";
 import pingpost from "@/public/pingpost.png";
 import placeholder from "@/public/placeholder.png";
+import chatty from "@/public/chatty.png";
 
 export const links = [
   {
@@ -47,7 +48,7 @@ export const projectsData = [
     imageUrl: pingpost,
   },
   {
-    link: "",
+    link: "https://github.com/poteznyszymon/chatty",
     title: "Chatty",
     description:
       "Fullstack app for chatting with realtime features and optimistic updates.",
@@ -60,18 +61,18 @@ export const projectsData = [
       "Socket.io",
       "Tanstack Query",
     ],
-    imageUrl: placeholder,
+    imageUrl: chatty,
   },
 ];
 
 export const skills = [
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
+  "Typescript",
+  "Javascript",
   "React",
-  "TanstackQuery",
-  "Next.js",
+  "Node.js",
+  "Hono.js",
   "Tailwindcss",
   "MongoDB",
   "PostgressSQL",
@@ -79,8 +80,8 @@ export const skills = [
   "Prisma",
   "Node.js",
   "Bun",
-  "Hono",
   "Express.js",
-  "Socket.io",
   "Postman",
+  "Git",
+  "Tanstack",
 ];
