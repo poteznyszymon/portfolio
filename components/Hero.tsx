@@ -1,13 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { useSectionInView } from "@/lib/hooks";
+import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
   const { ref } = useSectionInView("Home");
+  const [isDownloadMenuOpen, setIsDownloadMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsDownloadMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <main ref={ref} id="home" className="relative h-screen flex ">
       <div className="-z-10 bg-main-orange w-36 h-36 md:w-64 md:h-64 rounded-full absolute left-1/3 top-1/4 blur-[7rem] md:blur-[10rem]" />
@@ -35,14 +52,44 @@ const Hero = () => {
               <p>Contact me here</p>
               <FaArrowRightLong />
             </a>
-            <a
-              href=""
-              download
-              className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-3 sm:py-2  rounded-full justify-between md:justify-between flex items-center gap-1"
+            <div
+              ref={menuRef}
+              className="relative"
+              onClick={() => setIsDownloadMenuOpen(!isDownloadMenuOpen)}
             >
-              <p>Download CV</p>
-              <LiaDownloadSolid size={18} />
-            </a>
+              <button className="bg-main-font w-full md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-3 sm:py-2 rounded-full justify-between md:justify-between flex items-center gap-1">
+                <p>Download CV</p>
+                <LiaDownloadSolid size={18} />
+              </button>
+              <AnimatePresence>
+                {isDownloadMenuOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10, x: "-50%" }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.2 }}
+                    onMouseLeave={() => setIsDownloadMenuOpen(false)}
+                    className="absolute top-full left-1/2 mt-2 -translate-x-1/2 w-32 p-1 gap-1 bg-slate-100 rounded-md shadow-sm flex flex-col z-50"
+                  >
+                    <a
+                      target="_blank"
+                      href="/SzymonFularczykCvPolish.pdf"
+                      className="hover:bg-main-font rounded-sm px-1 hover:text-white transition-colors"
+                    >
+                      Polish
+                    </a>
+                    <a
+                      target="_blank"
+                      href="/SzymonFularczykCvEnglish.pdf"
+                      className="hover:bg-main-font rounded-sm px-1 hover:text-white transition-colors"
+                    >
+                      English
+                    </a>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             <a
               href="https://github.com/poteznyszymon"
               target="_blank"
