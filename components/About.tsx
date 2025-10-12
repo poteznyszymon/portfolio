@@ -33,9 +33,11 @@ const About = () => {
         I&apos;m self-taught{" "}
         <span className="font-semibold">fullstack web developer</span>. My main
         tech stack is{" "}
-        <span className="font-semibold">React, Node.js/Springboot</span>. I am
-        also familiar <span className="font-semibold">postgress</span> and{" "}
-        <span className="font-semibold">mongodb</span>, I am always open to
+        <span className="font-semibold">
+          Java (Spring Boot), React / Angular
+        </span>
+        . I am also familiar <span className="font-semibold">postgress</span>{" "}
+        and <span className="font-semibold">mongodb</span>, I am always open to
         learn new technologies. Apart from coding, I enjoy lifting at gym and
         swimming.
       </motion.p>

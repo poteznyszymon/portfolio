@@ -1,29 +1,13 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { useSectionInView } from "@/lib/hooks";
-import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
   const { ref } = useSectionInView("Home");
-  const [isDownloadMenuOpen, setIsDownloadMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsDownloadMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <main ref={ref} id="home" className="relative h-screen flex ">
@@ -42,9 +26,9 @@ const Hero = () => {
             Fullstack developer,
           </p>
           <p className="text-lg md:text-xl">
-            based in Gdańsk, <span className="font-semibold">Poland.</span>
+            based in Toruń, <span className="font-semibold">Poland.</span>
           </p>
-          <div className="flex flex-col md:flex-row  mt-5 xl:gap-3 lg:gap-2 md:gap-1 gap-3">
+          <div className="flex flex-col md:flex-row mt-5 xl:gap-3 lg:gap-2 md:gap-1 gap-3">
             <a
               href="mailto:szymonfularczyk@o2.pl"
               className="bg-main-font md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-white text-sm px-4 py-3 sm:py-2 rounded-full justify-between md:justify-between flex items-center gap-2"
@@ -52,43 +36,14 @@ const Hero = () => {
               <p>Contact me here</p>
               <FaArrowRightLong />
             </a>
-            <div
-              ref={menuRef}
-              className="relative"
-              onClick={() => setIsDownloadMenuOpen(!isDownloadMenuOpen)}
+            <a
+              target="_blank"
+              href="/cv_szymon_fularczyk.pdf"
+              className="bg-main-font  md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-3 sm:py-2 rounded-full justify-between md:justify-between flex items-center gap-1"
             >
-              <button className="bg-main-font w-full md:hover:scale-105 hover:scale-[102%] transition-all duration-500 hover:bg-opacity-85 text-sm text-white px-4 py-3 sm:py-2 rounded-full justify-between md:justify-between flex items-center gap-1">
-                <p>Download CV</p>
-                <LiaDownloadSolid size={18} />
-              </button>
-              <AnimatePresence>
-                {isDownloadMenuOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10, x: "-50%" }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.2 }}
-                    onMouseLeave={() => setIsDownloadMenuOpen(false)}
-                    className="absolute top-full left-1/2 mt-2 -translate-x-1/2 w-32 p-1 gap-1 bg-slate-100 rounded-md shadow-sm flex flex-col z-50"
-                  >
-                    <a
-                      target="_blank"
-                      href="/SzymonFularczykCvPolish.pdf"
-                      className="hover:bg-main-font rounded-sm px-1 hover:text-white transition-colors"
-                    >
-                      Polish
-                    </a>
-                    <a
-                      target="_blank"
-                      href="/SzymonFularczykCvEnglish.pdf"
-                      className="hover:bg-main-font rounded-sm px-1 hover:text-white transition-colors"
-                    >
-                      English
-                    </a>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
+              <p>Download CV</p>
+              <LiaDownloadSolid size={18} />
+            </a>
 
             <a
               href="https://github.com/poteznyszymon"
