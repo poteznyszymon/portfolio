@@ -36,10 +36,11 @@ const About = () => {
         <span className="font-semibold">
           Java (Spring Boot), React / Angular
         </span>
-        . I am also familiar <span className="font-semibold">postgress</span>{" "}
-        and <span className="font-semibold">mongodb</span>, I am always open to
-        learn new technologies. Apart from coding, I enjoy lifting at gym and
-        swimming.
+        . I am also familiar <span className="font-semibold">postgress</span>. I
+        am always open to learn new technologies. Additionally, I am expanding
+        my skills by learning about VPS management, manual application
+        deployment, CI/CD processes to better understand the full lifecycle of
+        web applications. Apart from coding, I enjoy lifting at gym.
       </motion.p>
     </div>
   );

@@ -5,6 +5,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { useSectionInView } from "@/lib/hooks";
+import { ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { links } from "@/lib/data";
 
 const Hero = () => {
   const { ref } = useSectionInView("Home");
@@ -71,6 +74,12 @@ const Hero = () => {
             animate={{ scale: 1.2, rotate: -10 }}
           />
         </motion.div>
+        <Link
+          href={links[1].hash}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
+        >
+          <ChevronDown />
+        </Link>
       </div>
     </main>
   );

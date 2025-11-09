@@ -32,9 +32,9 @@ const Projects = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="flex items-center gap-2 justify-center"
+        className="flex items-center gap-4 justify-center px-10 lg:px-20 "
       >
-        <CircleAlert className="size-5 text-red-500" />
+        <CircleAlert className="size-5 text-red-500 shrink-0" />
         <p className="text-muted-foreground">
           Projects are hosted on free-tier services. They may take a moment to
           wake up, but they're worth the wait!
