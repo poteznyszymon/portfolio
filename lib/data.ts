@@ -2,6 +2,7 @@ import chatGPTClone from "@/public/chatgpt-clone.png";
 import pingpost from "@/public/pingpost.png";
 import placeholder from "@/public/placeholder.png";
 import chatty from "@/public/chatty.png";
+import interact from "@/public/interact.png";
 
 export const links = [
   {
@@ -46,6 +47,21 @@ export const projectsData = [
       "Tanstack Query",
     ],
     imageUrl: pingpost,
+  },
+  {
+    link: "https://interact.szymonfularczyk.site",
+    title: "Interact",
+    description: "Fullstack app for creating markdown notes",
+    tags: [
+      "Spring Boot",
+      "React",
+      "Postgresql",
+      "Docker",
+      "VPS",
+      "Oauth",
+      "Tanstack Query",
+    ],
+    imageUrl: interact,
   },
   {
     link: "https://github.com/poteznyszymon/chatty",

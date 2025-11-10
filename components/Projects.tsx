@@ -32,7 +32,7 @@ const Projects = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="flex items-center gap-4 justify-center px-10 lg:px-20 "
+        className="flex items-center gap-4 justify-center px-10 lg:px-20  pb-4"
       >
         <CircleAlert className="size-5 text-red-500 shrink-0" />
         <p className="text-muted-foreground">
