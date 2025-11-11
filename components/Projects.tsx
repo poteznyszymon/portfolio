@@ -10,7 +10,7 @@ import { CircleAlert } from "lucide-react";
 import { useSectionInView } from "@/lib/hooks";
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.1);
+  const { ref } = useSectionInView("Projects", 0.3);
 
   return (
     <div
