@@ -25,7 +25,7 @@ export const links = [
 
 export const projectsData = [
   {
-    link: "https://pingpost-fullstack.onrender.com/",
+    link: "https://www.pingpost.szymonfularczyk.site/",
     title: "Pingpost",
     description:
       "Fullstack social media app made with mern tech stack that allows users to create posts, like and comment and much more.",
