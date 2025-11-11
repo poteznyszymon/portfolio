@@ -25,14 +25,6 @@ export const links = [
 
 export const projectsData = [
   {
-    link: "https://fullstack-chatgpt-clone.onrender.com",
-    title: "Chat AI",
-    description:
-      "Fullstack ai-chat app that allows users to ask questions with ai bot and store multiple chats.",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
-    imageUrl: chatGPTClone,
-  },
-  {
     link: "https://pingpost-fullstack.onrender.com/",
     title: "Pingpost",
     description:
@@ -47,6 +39,14 @@ export const projectsData = [
       "Tanstack Query",
     ],
     imageUrl: pingpost,
+  },
+  {
+    link: "https://fullstack-chatgpt-clone.onrender.com",
+    title: "Chat AI",
+    description:
+      "Fullstack ai-chat app that allows users to ask questions with ai bot and store multiple chats.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind", "Rest API"],
+    imageUrl: chatGPTClone,
   },
   {
     link: "https://interact.szymonfularczyk.site",
