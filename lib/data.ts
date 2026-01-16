@@ -93,6 +93,7 @@ export const skills = [
   "Spring Boot",
   "MongoDB",
   "PostgressSQL",
+  "Docker",
   "Postman",
   "Git",
 ];
